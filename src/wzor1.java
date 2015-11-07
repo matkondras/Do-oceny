@@ -10,12 +10,12 @@ import java.util.Scanner;
 /**
  *
  * @author Mateusz
- */
-public class wzór
+// */
+public class wzor1
 
 {
     public static void main(String[] args) {
-        System.out.println("Podaj parametry równania kwadratowego ax2+bx+c");
+        System.out.println("Podaj parametry rownania kwadratowego ax2+bx+c");
        Scanner skaner = new Scanner(System.in);
        double a = skaner.nextDouble();
        double b = skaner.nextDouble ();
@@ -28,17 +28,17 @@ public class wzór
            delta = Math.sqrt(delta);
            double x1 = (-b-delta)/(2*a);
            double x2 = (-b+delta)/(2*a);
-           System.out.println("Pierwiastek równania to" + x1 + "oraz" + x2);
+           System.out.println("Pierwiastek rownania to" + x1 + "oraz=" + x2);
        }
        else if (delta == 0)
        {
         double x0 = -b/(2*a);
-        System.out.println("Pierwiastek podwójny to:" + x0);
+        System.out.println("Pierwiastek podwojny to:" + x0);
            
        }
        else if (delta<0)
        {
-           System.out.println("Równanie nie ma pierwiastków");
+           System.out.println("Rownanie nie ma pierwiastkow");
        }
                
        
